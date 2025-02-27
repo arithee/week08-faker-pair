@@ -11,20 +11,20 @@ echo "<thead class='table-dark'><tr><th>Title</th><th>Author</th><th>Genre</th><
 $genres = ['Fiction', 'Mystery', 'Historical', 'Scifi', 'Thriller', 'Romance', 'Fantasy', 'Horror'];
 
 for ($i = 0; $i < 15; $i++) {
-//$title = $faker->paragraph();
+$title = $faker->sentence(3);
 $author = $faker->name();
 $genre = $genres[array_rand($genres)];
 $PublicationYear = $faker->numberBetween(1900, 2024);
 $isbn = $faker->isbn13();
-//$summary = $faker->text(50);
+$summary = $faker->paragraph();
 
 echo "<tr>";
-//echo "<td>($title)</td>";
+echo "<td>($title)</td>";
 echo "<td>($author)</td>";
 echo "<td>($genre)</td>";
 echo "<td>($PublicationYear)</td>";
 echo "<td>($isbn)</td>";
-//echo "<td>($summary)</td>";
+echo "<td>($summary)</td>";
 echo "</tr>";
 }
 echo "</tbody></table></div>";

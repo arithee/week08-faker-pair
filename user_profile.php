@@ -25,7 +25,7 @@ echo "<td>($email)</td>";
 echo "<td>($phonenumber)</td>";
 echo "<td>($address)</td>";
 echo "<td>($date)</td>";
-echo "<td>($jobTitle)</td>";
+echo "<td>($jobtitle)</td>";s
 echo "</tr>";
 }
 echo "</tbody></table></div>";
